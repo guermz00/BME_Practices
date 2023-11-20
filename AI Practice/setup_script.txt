@@ -1,4 +1,4 @@
-wget -O tensorflow.zip httpsgithub.comtensorflowtensorflowarchivev2.2.1.zip
+wget -O tensorflow.zip https://github.com/tensorflow/tensorflow/archivev/2.2.1.zip
 
 # the tools needed
 $ sudo apt-get install cmake curl
