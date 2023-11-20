@@ -1,5 +1,3 @@
-wget -O tensorflow.zip https://github.com/tensorflow/tensorflow/archivev/2.2.1.zip
-
 # the tools needed
 $ sudo apt-get install cmake curl
 # download the latest TensorFlow version (2.6.0)
