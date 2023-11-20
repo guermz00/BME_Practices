@@ -15,7 +15,7 @@ def capture_image():
     print("Image captured")
 
 def send_command_to_arduino(command):
-    ser.write(f"{command}\n".encode('utf-8'))
+    ser.write("{}\n".format(command).encode('utf-8'))
     time.sleep(1)  # Wait for Arduino to process the command
 
 while True:
