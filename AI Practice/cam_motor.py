@@ -19,7 +19,11 @@ def send_command_to_arduino(command):
     time.sleep(1)  # Wait for Arduino to process the command
 
 while True:
-    input("Press Enter to capture image and move motor...")
-    capture_image()
-    steps = 100  # Define the number of steps the motor should move
-    send_command_to_arduino(steps)
+    user_input = input("Press 'Y' to capture image and move motor...").strip().upper()
+    if user_input == 'Y':
+        capture_image()
+        steps = 100  # Define the number of steps the motor should move
+        send_command_to_arduino(steps)
+    else:
+        print("Invalid input. Please press 'Y' to continue.")
+
